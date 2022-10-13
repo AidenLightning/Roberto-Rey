@@ -1,0 +1,98 @@
+// Variable para fotos
+$fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+
+  h3 {
+    color: $colorbase;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-top: $mediano;
+    padding-bottom: $mediano - 10;
+  }
+  section {
+    & .galeria {
+        display: grid;
+        width: $porc1;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: $chico + 5;
+        padding: $chico + 5;
+        padding-top: 1px;
+      }
+    & .item {
+        border: 2px solid $blanco;
+        height: 300px;
+        transition: all .4s;
+      }
+  }
+  // GALERIA CON @MIXIN
+  @mixin foto-modo {
+    background-size: cover;
+    background-position: center;
+  }
+  @mixin foto-hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+  }
+  @each $imagen in $fotos {
+    .item#{$imagen} {
+      background-image: url(../multimedia/#{$imagen}.jpg);
+      @include foto-modo;
+      filter: grayscale($porc1);
+    }
+  }
+  @each $imagen in $fotos {
+    .item#{$imagen}:hover {
+      @include foto-hover;
+      filter: grayscale(0%);
+    }
+  }
+  // VIDEOS
+  .video-youtube {
+    & .titulo-videos {
+        color: $colorbase;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding-top: $mediano - 10;
+        padding-bottom: 20px;
+    }
+    .flex-youtube {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-yt {
+      width: 560px;
+      height: 340px;
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      background-color: $colorboton;
+      color: $blanco;
+    }
+}
+  .spotify {
+    padding-top: 50px;
+      & .titulo-spotify {
+          color: $colorbase;
+          text-align: center;
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+          padding-top: $mediano - 10;
+          padding-bottom: 20px;
+      }
+      .flex-spotify {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+  .contenedor-yt-sp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

@@ -1,0 +1,976 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background: #96d8c9;
+  color: #000;
+}
+
+*::selection {
+  background: #96d8c9;
+  color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body h1 {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #55a290;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+
+header {
+  padding-bottom: 1px;
+}
+header .nav-item:active {
+  background: #55a290;
+}
+header .foto-fondo {
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header #carousel1 {
+  width: auto;
+}
+header img {
+  width: 190px;
+}
+header h1 {
+  display: none;
+}
+
+.container-bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: 0 400px 0 400px;
+  border-radius: 1%;
+}
+
+.fotobio {
+  width: 260px;
+  height: auto;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.fotobioresp {
+  display: none;
+}
+
+.box *:last-child {
+  margin-bottom: 0;
+}
+
+.box-4 {
+  width: 65%;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  border-radius: 1%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.biografia-p {
+  background: none repeat scroll 0 0 #fff;
+  padding: 25px 55px 25px 1px;
+  border-radius: 0.2%;
+}
+
+.biog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo-bio {
+  color: #55a290;
+  text-align: right;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding: 25px 0 25px 1px;
+}
+
+.biografia-p {
+  background: none repeat scroll 0 0 #fff;
+  padding: 25px 55px 25px 1px;
+  border-radius: 1%;
+  z-index: 1;
+}
+
+.cami {
+  color: #55a290;
+}
+
+.cami:hover {
+  color: #1d6454;
+}
+
+h3 {
+  color: #55a290;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+section .galeria {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  padding-top: 1px;
+}
+section .item {
+  border: 2px solid #fff;
+  height: 300px;
+  transition: all 0.4s;
+}
+
+.item1 {
+  background-image: url(../multimedia/1.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item2 {
+  background-image: url(../multimedia/2.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item3 {
+  background-image: url(../multimedia/3.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item4 {
+  background-image: url(../multimedia/4.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item5 {
+  background-image: url(../multimedia/5.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item6 {
+  background-image: url(../multimedia/6.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item7 {
+  background-image: url(../multimedia/7.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item8 {
+  background-image: url(../multimedia/8.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item9 {
+  background-image: url(../multimedia/9.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item10 {
+  background-image: url(../multimedia/10.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item11 {
+  background-image: url(../multimedia/11.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item12 {
+  background-image: url(../multimedia/12.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item13 {
+  background-image: url(../multimedia/13.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item14 {
+  background-image: url(../multimedia/14.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item15 {
+  background-image: url(../multimedia/15.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item16 {
+  background-image: url(../multimedia/16.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item17 {
+  background-image: url(../multimedia/17.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item18 {
+  background-image: url(../multimedia/18.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item19 {
+  background-image: url(../multimedia/19.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item20 {
+  background-image: url(../multimedia/20.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.item1:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item2:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item3:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item4:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item5:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item6:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item7:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item8:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item9:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item10:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item11:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item12:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item13:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item14:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item15:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item16:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item17:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item18:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item19:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.item20:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.video-youtube .titulo-videos {
+  color: #55a290;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.video-youtube .flex-youtube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.video-youtube .video-yt {
+  width: 560px;
+  height: 340px;
+}
+.video-youtube .btn {
+  display: flex;
+  justify-content: center;
+  background-color: #1d6454;
+  color: #fff;
+}
+
+.spotify {
+  padding-top: 50px;
+}
+.spotify .titulo-spotify {
+  color: #55a290;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.spotify .flex-spotify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-yt-sp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-clases h3 {
+  color: #55a290;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+.contenedor-clases .titulo-alumnos {
+  padding-top: 60px;
+}
+.contenedor-clases .video-clases {
+  padding: 41.36% 0 0 0;
+  position: relative;
+}
+.contenedor-clases iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contenedor-clases .contenedor-alumnos {
+  background-color: #fff;
+}
+.contenedor-clases .alumnos {
+  display: flex;
+  justify-content: center;
+  height: 380px;
+}
+.contenedor-clases .carousel {
+  display: flex;
+  justify-content: center;
+  width: 810px;
+  height: 450px;
+}
+.contenedor-clases .carousel-indicators li {
+  display: none;
+}
+.contenedor-clases .carousel-inner {
+  width: 650px;
+}
+.contenedor-clases .contenedor-3 {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-clases .cajas-coment {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  align-items: center;
+}
+.contenedor-clases .foto-alumno {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+  padding: 20px 0 20px 0;
+}
+.contenedor-clases .nombre-alumno {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1px;
+}
+.contenedor-clases .ubicacion-p {
+  font-size: 14px;
+  color: #55a290;
+  margin: 3px;
+}
+.contenedor-clases .comentario {
+  padding: 5px 40px 5px 40px;
+  font-size: 16px;
+  width: 100%;
+}
+.contenedor-clases .carousel-control-prev-icon, .contenedor-clases .carousel-control-next-icon, .contenedor-clases .carousel-indicators {
+  filter: invert(108%);
+  height: 15px;
+}
+
+.contenedor_form {
+  display: flex;
+  width: 1050px;
+  height: 530px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Informacion de Contacto*/
+.contact_info {
+  width: 38%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../multimedia/fotocontacto.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Formulario de contacto*/
+form.form_contact {
+  width: 62%;
+  padding: 30px 40px;
+}
+
+form.form_contact h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #55a290;
+  margin-bottom: 20px;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 0px 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #D1D1D1;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 90px;
+}
+
+form input[type=submit] {
+  width: 180px;
+  background: #55a290;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  align-self: flex-end;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover {
+  background: #1d6454;
+}
+
+body .mensaje-exito {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .mensaje-exito h2 {
+  font-size: 35px;
+  color: #55a290;
+  display: block;
+  text-align: center;
+  margin: 50px;
+}
+body .mensaje-exito a {
+  display: block;
+  padding: 10px 30px;
+  background: #55a290;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+}
+body .mensaje-exito a:hover {
+  background: #1d6454;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 55px;
+}
+footer .webmaster {
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 35px;
+}
+footer img {
+  width: 50px;
+  height: auto;
+  padding-top: 15px;
+}
+footer .subir {
+  height: 40px;
+  width: 40px;
+  background-color: #55a290;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  border: #fff;
+  font-size: 22px;
+  z-index: 10;
+}
+footer .middle {
+  position: relative;
+  transform: translateY(-50%);
+  width: 100%;
+  top: 40%;
+  padding-top: 30px;
+}
+footer .btn-redes {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+footer .btn-redes i {
+  line-height: 40px;
+  font-size: 14px;
+  transition: 0.2s linear;
+}
+footer .btn-redes:hover i {
+  transform: scale(1.2);
+  color: #f1f1f1;
+}
+footer .btn-redes::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #55a290;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+footer .btn-redes:hover::before {
+  -webkit-animation: aaa 0.7s 1;
+          animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@-webkit-keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .box-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .biografia-p {
+    padding: 0 50px 0 50px;
+    text-align: justify;
+  }
+  .fotobioresp {
+    display: none;
+  }
+  .titulo-bio {
+    text-align: center;
+    padding-bottom: 4px;
+  }
+  .container-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1px;
+  }
+  .fotobio {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .clases {
+    margin: auto;
+    padding-top: 1px;
+  }
+  #clasesid {
+    max-width: 890px;
+  }
+  .contenedor_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    padding-left: 10px;
+  }
+  .navbar-toggler {
+    padding-right: 10px;
+  }
+  .imglogo {
+    width: 160px;
+  }
+  .social-buttons-index {
+    display: none;
+  }
+  .logo-footer {
+    width: 40px;
+  }
+  .foto-fondo {
+    height: 60vh !important;
+  }
+  .biog {
+    width: auto;
+  }
+  .box-4 {
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .box-4:after {
+    border-radius: 10%;
+    bottom: 0;
+    height: 20px;
+    left: 10px;
+    right: 10px;
+  }
+  .titulo-bio {
+    text-align: right;
+    font-size: 18px;
+    padding-top: 1px;
+  }
+  .biografia-p {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+  }
+  .fotobio {
+    display: none;
+  }
+  .fotobioresp {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 30px;
+    margin-top: 45px;
+  }
+  .galeria {
+    width: 100%;
+  }
+  .item {
+    filter: grayscale(0%);
+  }
+  .titulo-videos {
+    padding-top: 30px;
+    margin: 0;
+    font-size: 18px !important;
+  }
+  .titulo-fotos {
+    font-size: 18px;
+  }
+  .video-yt {
+    overflow: hidden;
+    padding-bottom: 340px;
+    position: relative;
+    max-width: 100% !important;
+  }
+  .video-yt iframe {
+    left: 0;
+    top: 0;
+    height: 95%;
+    width: 100%;
+    position: absolute;
+  }
+  .flex-youtube {
+    width: 100%;
+  }
+  .texto-yt {
+    padding: 10px;
+  }
+  .link-sp {
+    position: relative;
+    max-width: 100%;
+  }
+  .link-sp iframe {
+    width: 100%;
+  }
+  .titulo-spotify {
+    padding-top: 30px;
+    margin: 0;
+    font-size: 18px !important;
+  }
+  .clases {
+    margin: auto;
+    padding-top: 1px;
+  }
+  .carousel {
+    max-width: 100%;
+  }
+  .carousel-clases {
+    width: 100%;
+    height: 200px;
+  }
+  .carousel-clases .foto-alumno {
+    padding: 10px !important;
+  }
+  .carousel-clases .nombre-alumno {
+    font-size: 16px;
+  }
+  .carousel-clases .ubicacion-p {
+    font-size: 13px;
+  }
+  .carousel-clases .comentario {
+    font-size: 15px !important;
+    padding: 10px 50px 30px 50px !important;
+    line-height: 1rem;
+  }
+  .contenedor-clases h3 {
+    font-size: 18px;
+    padding: 30px 15px 10px 15px;
+  }
+  .contact_info {
+    display: none;
+  }
+  .contenedor_form {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  form.form_contact {
+    padding: 0;
+  }
+  form.form_contact h2 {
+    font-size: 18px;
+  }
+  form.form_contact label {
+    font-weight: 500;
+  }
+  form.form_contact input {
+    width: 100% !important;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+    font-family: "Open sans";
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .subir {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-clases {
+    width: 90%;
+    height: 100px;
+  }
+  .carousel-clases .nombre-alumno {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel-clases .ubicacion-p {
+    font-size: 12px;
+    width: 100%;
+  }
+  .carousel-clases .comentario {
+    font-size: 14px !important;
+    padding: 10px 50px 30px 50px !important;
+    line-height: 1rem;
+  }
+  .carousel-clases .contenedor-3 {
+    text-align: center;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

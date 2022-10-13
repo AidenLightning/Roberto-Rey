@@ -1,0 +1,79 @@
+.contenedor-clases {
+    & h3 {
+        color: $colorbase;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding-top: $mediano - 5;
+        padding-bottom: $chico + 5;
+    }
+    & .titulo-alumnos{
+        padding-top: $mediano + 10;
+    }
+    & .video-clases {
+        padding: 41.36% 0 0 0;
+        position: relative;
+    }
+    & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $porc1; 
+        height:$porc1;
+    }
+    & .contenedor-alumnos{
+        background-color: $blanco;
+    }
+    & .alumnos{
+        display: flex;
+        justify-content: center;
+        height: 380px;
+    }
+    & .carousel{
+        display: flex;
+        justify-content: center;
+        width: 810px;
+        height: 450px;
+        }
+    & .carousel-indicators li { 
+        display: none;
+    }
+    & .carousel-inner {
+        width: 650px;
+    }
+    & .contenedor-3 {
+        display: flex;
+        justify-content: center;
+    }
+    & .cajas-coment {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    align-items: center;
+    }
+    & .foto-alumno {
+    width: 90px;
+    height: auto;
+    border-radius: $porc2;
+    padding: 20px 0 20px 0;
+    }
+    & .nombre-alumno {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1px;
+    }
+    & .ubicacion-p {
+        font-size: 14px;
+        color: $colorbase;
+        margin: 3px;
+    }
+    & .comentario {
+        padding: 5px 40px 5px 40px;
+        font-size: 16px;
+        width: $porc1;
+    }
+    & .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
+        filter: invert(108%);
+        height: 15px;
+    }
+}

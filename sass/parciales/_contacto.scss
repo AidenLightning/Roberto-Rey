@@ -1,0 +1,72 @@
+.contenedor_form {
+    display: flex;
+    width: 1050px;
+    height: 530px;
+    margin: $mediano auto;
+    background: $blanco;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+/* Informacion de Contacto*/
+.contact_info {
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../multimedia/fotocontacto.png');
+    background-size: cover;
+    background-position: center center;
+}
+/* Formulario de contacto*/
+form.form_contact {
+    width: 62%;
+    padding: ($chico + 5) ($mediano - 10);
+}
+form.form_contact h2 {
+	font-size: $chico;
+	font-weight: 600;
+	color: $colorbase;
+	margin-bottom: $chico - 5;
+}
+.user_info {
+    display: flex;
+    flex-direction: column;
+    padding-top: $chico + 5;
+}
+form label {
+    font-weight: 600;
+}
+form input,
+form textarea {
+    width: $porc1;
+    padding: 10px 0px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+	color: #000;
+	font-size: 14px;
+    font-weight: 400;
+}
+form textarea {
+    max-width: $porc1;
+    min-width: $porc1;
+    max-height: 90px;
+}
+form input[type="submit"] {
+    width: 180px;
+	background: $colorbase;
+	padding: 10px;
+	border: none;
+	border-radius: $chico;
+    align-self: flex-end;
+    color: $blanco;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background: $colorboton;
+}

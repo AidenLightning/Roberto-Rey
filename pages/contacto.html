@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Contacto con Roberto</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Roberto Alejandro Rey, Contacto, Consultas sobre clases, musica, guitarra">
+    <meta name="description" content="Formulario de contacto">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Camila Agustina Rey" />
+    <meta name="robots" content="noarchive" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:url" content="https://www.robertorey.com.ar/contacto.html" />
+    <meta property="og:site_name" content="Roberto Alejandro Rey" />
+    <meta property="og:image" content="https://robertorey.com.ar/multimedia/19.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contacto - Roberto Alejandro Rey" />
+    <meta property="og:description" content="Sitio Oficial de Roberto Alejandro Rey Guitarrista y Educador" />
+    <link rel="shortcut icon" href="../multimedia/logorarcorto.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Abel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesone.com/releases/v5.4.1/css/all.css"/>
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+<body>
+  <h1>Formulario de contacto</h1>
+  <header class="header">
+    <!-- MENÚ BOOTSTRAP -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="../index.html">
+        <img class="imglogo" src="../multimedia/logorar.jpg" alt="Logo Roberto Rey" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <div class="navbar-nav text-center">
+          <a class="nav-item nav-link" href="../index.html">INICIO</a>
+          <a class="nav-item nav-link" href="../pages/multimedia.html">MULTIMEDIA</a>
+          <a class="nav-item nav-link" href="../pages/clases.html">CLASES</a>
+          <a class="nav-item nav-link active" href="#">CONTACTO</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FORMULARIO -->
+  <div class="contenedor_form">
+    <div class="contact_info"></div>
+      <form action="enviar.php" method="post" class="form_contact">
+        <h2>CONSULTAS</h2>
+        <div class="user_info">
+          <label for="names">Nombre*</label>
+          <input type="text" id="names" name="nombre" placeholder=" " required>
+          <label for="email">Email*</label>
+          <input type="text" id="email" name="correo" required>
+          <label for="mensaje">Mensaje*</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <input type="submit" value="Enviar Mensaje" id="btnSend">
+        </div>
+      </form>
+  </div>
+  <!-- PIE DE PAGINA -->
+  <footer>
+    <a href="#" class="subir">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <img class="logo-footer" src="../multimedia/logorarcorto.jpg" alt="" class="logo">
+    <!--REDES SOCIALES-->
+    <div class="middle">
+        <a class="btn-redes" href="https://www.facebook.com/roberto.a.rey">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a class="btn-redes" href="https://www.instagram.com/robertoalejandrorey">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="btn-redes" href="https://www.youtube.com/robertoalejandrorey">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a class="btn-redes" href="https://www.tiktok.com/@robertoalejandrorey">
+        <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <p class="webmaster"><b>©2022 | Diseño <a class="cami" href="mailto:aidenmaster87@gmail.com?Subject=Información%20sobre%20tus%20diseños">Oscar Gaitán - Aiden Light</a></b></p>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/2e422aee46.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
